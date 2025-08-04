@@ -1,1 +1,124 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FONT ICONS */
+/* Import the font face from the holberton font files */
+@font-face {
+  font-family: 'HolbertonIcons';
+  src: url('fonts/holberton-icons.eot');
+  src: url('fonts/holberton-icons.eot?#iefix') format('embedded-opentype'),
+       url('fonts/holberton-icons.woff2') format('woff2'),
+       url('fonts/holberton-icons.woff') format('woff'),
+       url('fonts/holberton-icons.ttf') format('truetype'),
+       url('fonts/holberton-icons.svg#HolbertonIcons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Base body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  padding: 40px 0;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Section title */
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #222;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Individual feature */
+.feature {
+  flex: 1 1 30%;
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
+
+/* Icon base styles */
+.icon {
+  font-family: 'HolbertonIcons';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  font-size: 64px;
+  color: #ff6565;
+  margin-bottom: 20px;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Icon mappings from demo */
+/* Replace these unicode values with the ones from your holberton icon font demo */
+.icon-speaker:before {
+  content: "\e900"; /* example Unicode for speaker icon */
+}
+.icon-battery:before {
+  content: "\e901"; /* example Unicode for battery icon */
+}
+.icon-wireless:before {
+  content: "\e902"; /* example Unicode for wireless icon */
+}
+
+/* Feature title */
+.feature-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* Feature text */
+.feature-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .feature {
+    flex: 1 1 100%;
+  }
+}
 
