@@ -1,1 +1,86 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+/* Section title */
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #222;
+}
+
+/* Features layout */
+.features {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Feature card */
+.feature {
+  flex: 1 1 30%;
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
+
+/* Pentagon shape */
+.pentagon {
+  width: 80px;
+  height: 80px;
+  background-color: #ff6565;
+  clip-path: polygon(
+    50% 0%,
+    95% 35%,
+    77% 90%,
+    23% 90%,
+    5% 35%
+  );
+  margin: 0 auto 20px;
+}
+
+/* Feature title */
+.feature-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* Feature text */
+.feature-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .feature {
+    flex: 1 1 100%;
+  }
+}
 
